@@ -27,4 +27,5 @@ function isPositiveP(num) {
 }
 
 let res = isPositiveP([]);
-res.then((res) => console.log("성공", res)).catch((err) => console.log("실패", err)); // 여기서 then과 catch 위치를 바꾸면 어떻게 되는가?
+res.then((res) => console.log(`성공`, res)).catch((err) => console.log("실패", err)); // 여기서 then과 catch 위치를 바꾸면 어떻게 되는가?
+//then은 resolve를 받아서 실행되고 catch는 reject를 받아서 실행된다.
